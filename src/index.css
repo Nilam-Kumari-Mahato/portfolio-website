@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Edu+QLD+Hand:wght@400..700&family=Frank+Ruhl+Libre:wght@300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&family=Playwrite+AU+SA:wght@100..400&family=Saira:ital,wght@0,100..900;1,100..900&family=Savate:ital,wght@0,200..900;1,200..900&family=Shadows+Into+Light&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box; /* add this for more consistent layout */
+}
+
+body {
+  background: linear-gradient(to right, #e5c9d7, #83a6ce);
+  font-size: 100%; /* Base font size relative to device */
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap; /* allow items to wrap on smaller screens */
+  gap: 1.5rem;
+  align-items: flex-end;
+  justify-content: end; /* changed to center for better balance */
+  margin: 4rem auto;
+  padding: 0 1rem;
+}
+
+.nav a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-family: monospace;
+  color: #7c3b68;
+}
+
+.nav a:hover {
+  color: gray;
+}
+
+.detail {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  gap: 20px;
+  font-family: "Saira", sans-serif;
+  font-size: 1.2rem;
+  max-width: 100%;
+}
+
+.detail h1 {
+  color: #0d1e4c;
+  font-family: "Savate", sans-serif;
+  font-size: 4rem; /* smaller and scalable */
+  word-wrap: break-word;
+}
+
+.detail h2, .detail h3 {
+  color: #26415e;
+  font-size: 1.5rem;
+}
+
+.profilepic img{
+  width: 100%;
+  max-width: 100%;  /* limits the size on large screens */
+  height: auto;       /* keeps aspect ratio */
+  border-radius: 50%; /* makes it circular */
+  object-fit: cover;  /* fits image inside the circle */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* optional styling */
+}
+
+.Hero {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.body {
+  margin: 2rem;
+  min-height: 80vh; /* changed from fixed height */
+  border-radius: 20px;
+  box-shadow: rgba(210, 147, 147, 0.2) 0 3px 5px -1px,
+              rgba(0, 0, 0, .14) 0 6px 10px 0,
+              rgba(0, 0, 0, .12) 0 1px 18px 0;
+  width: auto;
+}
+
+.about {
+  margin: 2rem;
+  min-height: 80vh;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
+              rgba(0, 0, 0, .14) 0 6px 10px 0,
+              rgba(0, 0, 0, .12) 0 1px 18px 0;
+}
+
+.about section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 1rem;
+}
+
+.about h1 {
+  color: #0d1e4c;
+  font-family: "Savate", sans-serif;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.about p {
+  font-family: "Saira", sans-serif;
+  font-size: 1.2rem;
+  max-width: 90%;
+  white-space: normal;
+  width: 70vw;
+  overflow-wrap: break-word;
+}
+
+.skills {
+  margin: 2rem;
+  min-height: 80vh;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
+              rgba(0, 0, 0, .14) 0 6px 10px 0,
+              rgba(0, 0, 0, .12) 0 1px 18px 0;
+}
+
+.skills h1 {
+  color: #0d1e4c;
+  padding: 2rem 1rem;
+  font-family: "Savate", sans-serif;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.skills section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+
+.skills h3 {
+  color: #26415e;
+  font-family: "Savate", sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.skills p {
+  font-size: 1.2rem;
+  font-family: "Saira", sans-serif;
+  overflow-wrap: break-word;
+  color: black;
+  display: inline;
+  margin-top: 2rem;
+  padding: 0.2rem 0.5rem;
+  text-align: center;
+}
+
+.contact {
+  margin: 2rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.contact h1 {
+  color: #0d1e4c;
+  font-size: 3rem;
+  font-family: "Savate", sans-serif;
+}
+
+.contact p {
+  padding: 5px;
+  font-size: 1.1rem;
+  font-family: "Saira", sans-serif;
+}
+
+.projects {
+  margin: 2rem;
+  min-height: 110vh;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
+              rgba(0, 0, 0, .14) 0 6px 10px 0,
+              rgba(0, 0, 0, .12) 0 1px 18px 0;
+}
+
+.projects h1 {
+  color: #0d1e4c;
+  padding: 2rem 1rem;
+  font-family: "Savate", sans-serif;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 1rem;
+}
+
+.project-card {
+  width: 90%;
+  max-width: 600px;
+  padding: 1rem;
+  background-color: #47669289;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
+              rgba(0, 0, 0, .14) 0 6px 10px 0,
+              rgba(0, 0, 0, .12) 0 1px 18px 0;
+}
+
+.project-card p {
+  padding: 0.5rem;
+  font-family: "Saira", sans-serif;
+  font-size: 1.2rem;
+  text-align: justify;
+  overflow-wrap: break-word;
+}
+
+.project-card img,
+.project-card video {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+
+.project-card a {
+  display: inline-block;
+  margin: 1rem;
+  border-radius: 20px;
+  font-family: "Saira", sans-serif;
+  font-size: 1.2rem;
+  padding: 8px 16px;
+  background-color: #0d1e4c86;
+  color: #b29eed;
+  text-decoration: none;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
+              rgba(0, 0, 0, .14) 0 6px 10px 0,
+              rgba(0, 0, 0, .12) 0 1px 18px 0;
+}
+
+.project-card a:hover {
+  color: #007bff;
+}
