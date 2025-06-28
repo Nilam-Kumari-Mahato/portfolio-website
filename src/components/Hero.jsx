@@ -12,7 +12,7 @@ export default function Hero(){
                     <h3>Aspiring Full Stack Developer</h3>
                 </div>
                 <div className="profilepic">
-                    <img src="nilam1.png" alt="profile picture" />
+                    <img src="/nilam1.png" alt="profile picture" />
                 </div>
             </section>
         </section>
